@@ -1,4 +1,4 @@
-// local reviews data
+// local reviews data array of objects
 const reviews = [
   {
     id: 1,
@@ -71,13 +71,14 @@ if(currentItem>reviews.length-1){
 }
 showPerson(currentItem);
 });
+//show previous person
 prevBtn.addEventListener('click',function(){
  if(currentItem==0){
    currentItem=reviews.length-1;   
  }else currentItem--;
- showPerson(currentItem);
- 
+ showPerson(currentItem); 
   });
+  //show random person card
 randomBtn.addEventListener('click',function(){
   currentItem=Math.floor(Math.random()*reviews.length);
   showPerson(currentItem);
