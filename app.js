@@ -56,6 +56,7 @@ showPerson(currentItem);
 });
 
 //show person based on item 
+// TO DO close atention later
 function showPerson(person){
 const item=reviews[person];
 img.src=item.img;
